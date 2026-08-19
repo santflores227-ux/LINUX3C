@@ -1,0 +1,9 @@
+README.TXT rw-rw-r-- 664
+docs rwxrwxr-x 775
+src  rwxrwxr-x 775
+logs rwxrwxr-x 775
+
+
+r--4
+w--2
+x--1
