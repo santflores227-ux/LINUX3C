@@ -1,24 +1,26 @@
-# Permisos de Archivos y Directorios
+md_content = """# Resumen de Permisos y Captura de Terminal
 
-Aquí tienes la tabla convertida a formato Markdown con la representación de permisos y su equivalencia octal:
+## Tabla de Archivos y Permisos
 
-| Nombre / Elemento | Permisos (Simbólico) | Permisos (Octal) |
-| :--- | :---: | :---: |
-| `README.TXT` | `rw-rw-r--` | **664** |
-| `docs` | `rwxrwxr-x` | **775** |
-| `src` | `rwxrwxr-x` | **775** |
-| `logs` | `rwxrwxr-x` | **775** |
+| Archivo / Directorio | Permisos (Simbólico) | Permisos (Numérico) |
+| :--- | :--- | :--- |
+| `README.TXT` | `rw-rw-r--` | `664` |
+| `docs`       | `rwxrwxr-x` | `775` |
+| `src`        | `rwxrwxr-x` | `775` |
+| `logs`       | `rwxrwxr-x` | `775` |
 
----
+### Valores Numéricos de Permisos
+* **r** (Lectura) = 4
+* **w** (Escritura) = 2
+* **x** (Ejecución) = 1
 
-### Guía de Valores Octales
+## Captura de Pantalla
 
-* **`r`** (Read / Lectura) = **4**
-* **`w`** (Write / Escritura) = **2**
-* **`x`** (Execute / Ejecución) = **1**
+![Captura de terminal](lah -Captura.png)
+"""
 
-#### Desglose de Cálculo:
-* **`6`** = `r` (4) + `w` (2) = Lectura y escritura
-* **`7`** = `r` (4) + `w` (2) + `x` (1) = Lectura, escritura y ejecución
-* **`5`** = `r` (4) + `x` (1) = Lectura y ejecución
-* **`4`** = `r` (4) = Solo lectura
+file_path = "/mnt/data/lah.md"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(md_content)
+
+print(f"File created successfully at {file_path}")
