@@ -16,11 +16,4 @@ md_content = """# Resumen de Permisos y Captura de Terminal
 
 ## Captura de Pantalla
 
-![Captura de terminal](lah -Captura.png)
-"""
-
-file_path = "/mnt/data/lah.md"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(md_content)
-
-print(f"File created successfully at {file_path}")
+<img src="01-ejercicio/lah -Captura.png">
