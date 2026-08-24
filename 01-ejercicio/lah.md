@@ -16,4 +16,4 @@ md_content = """# Resumen de Permisos y Captura de Terminal
 
 ## Captura de Pantalla
 
-<img src="01-ejercicio/lah -Captura.png">
+<img src="lah -Captura.png">
